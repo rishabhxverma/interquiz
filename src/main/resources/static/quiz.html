@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="./quizStyle.css">
+</head>
+
+<body>
+    <section id="quiz-container">
+        <h1>Interactive Quiz</h1>
+        <p id="nameId">By Rishabh Verma, #301460799</p>
+        <div class="line"></div>
+
+        <section id="question-section">
+            <p id="question-text"></p>
+            <div id="answers-container"></div>
+        </section>
+
+        <section id="results-section">
+            <h2>Results</h2>
+            <p id="score"></p>
+            <ul id="correct-answers"></ul>
+        </section>
+
+        <button id="prev-b" onclick="prevQuestion()">←</button>
+        <button id="next-b" onclick="nextQuestion()">→</button>
+        <button id="submit-b" onclick="submitQuiz()">Submit Quiz</button>
+        <button id="restart-b" onclick="restartQuiz()">Restart Quiz</button>
+    </section>
+
+    <script src="./quizLogic.js"></script>
+    <script>
+        window.onload = initQuiz;
+    </script>
+</body>
+
+</html>
